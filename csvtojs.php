@@ -13,7 +13,7 @@ function csvToJson($csvUrl) {
     // Assuming the first row of the CSV contains the column headers
     $headers = array_shift($csvData);
 
-    $jsonArray = []; //perbaikan : jika sudah menggunakan fungsi $jsonArray tidak perlu menambahkan "Array" lagi, hanya [] saja sudah cukup atau Array().
+    $jsonArray = array(); //perbaikan : jika sudah menggunakan fungsi $jsonArray tidak perlu menambahkan "Array" lagi, hanya [] saja sudah cukup atau Array().
 
     foreach ($csvData as $row) {
         $jsonArrayItem = [];
